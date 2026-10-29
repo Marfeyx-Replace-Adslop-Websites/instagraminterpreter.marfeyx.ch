@@ -1,3 +1,4 @@
+import { MarfeyxBrand } from "./brand/MarfeyxBrand";
 import { Avatar as HeroAvatar, Button, Card, Chip, Meter, SearchField } from "@heroui/react";
 import {
   CalendarDays,
@@ -147,18 +148,7 @@ function App() {
       <MobileDisabled />
       <main className="app-shell">
       <section className="control-panel" aria-label="Import and chat list">
-        <header className="brand-header">
-          <div className="brand-mark" aria-hidden="true">
-            <MessageCircleMore size={21} strokeWidth={1.8} />
-          </div>
-          <div className="brand-copy">
-            <span>Archive Studio</span>
-            <small>Instagram interpreter</small>
-          </div>
-          <Chip className="local-chip" color="success" size="sm" variant="soft">
-            <span className="status-dot" aria-hidden="true" /> Local
-          </Chip>
-        </header>
+        <header className="brand-header"><MarfeyxBrand product="Instagram Interpreter" /></header>
 
         <div className="intro-copy">
           <p className="eyebrow">Private by design</p>
@@ -329,11 +319,9 @@ function MobileDisabled() {
   return (
     <main className="mobile-disabled" aria-label="Mobile disabled notice">
       <Card className="mobile-disabled-card" variant="secondary">
-        <div className="mobile-disabled-mark" aria-hidden="true">
-          <MessageCircleMore size={26} strokeWidth={1.7} />
-        </div>
+        <MarfeyxBrand product="Instagram Interpreter" />
         <p className="eyebrow">Desktop experience</p>
-        <h1>Open Archive Studio on a larger screen.</h1>
+        <h1>Open Marfeyx Instagram Interpreter on a larger screen.</h1>
         <p>
           Instagram archives can contain thousands of messages and media files. A laptop or desktop gives you the
           performance and space needed for the full private viewer.

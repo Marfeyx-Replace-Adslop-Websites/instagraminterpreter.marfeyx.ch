@@ -1020,3 +1020,9 @@ h1 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Marfeyx / HeroUI 3 family: local layout, shared materials and interaction. */
+.brand-header { display: block; }
+.control-panel { background: #10141c; }
+.brand-header .mfx-identity { width: 100%; justify-content: space-between; }
+.mobile-disabled .mfx-identity { margin-bottom: 18px; }
