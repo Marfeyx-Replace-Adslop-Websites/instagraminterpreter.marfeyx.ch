@@ -1,3 +1,4 @@
+import { MarfeyxImport } from "./brand/MarfeyxImport";
 import { MarfeyxBrand } from "./brand/MarfeyxBrand";
 import { Avatar as HeroAvatar, Button, Card, Chip, Meter, SearchField } from "@heroui/react";
 import {
@@ -143,6 +144,8 @@ function App() {
 
 
 
+  if (!backup) return <><MobileDisabled /><MarfeyxImport product="Instagram Interpreter" title="Your archive. In focus." description="The conversations, photos, and moments you kept. Open your Instagram export in a workspace that makes them easy to explore." instruction="Request your Instagram information in JSON format, then choose the ZIP archive here. Messages and media are read in this browser." inputRef={fileInputRef} onChange={handleFileChange} onBrowse={handleUploadClick} busy={isParsing} errors={error ? [error] : []} /></>;
+
   return (
     <>
       <MobileDisabled />
@@ -152,7 +155,7 @@ function App() {
 
         <div className="intro-copy">
           <p className="eyebrow">Private by design</p>
-          <h1>Your conversations, made clear.</h1>
+          <h1>Your archive. In focus.</h1>
           <p>Explore years of messages, media, and patterns without anything leaving your device.</p>
         </div>
 
@@ -291,7 +294,7 @@ function App() {
                   <Sparkles size={25} strokeWidth={1.6} />
                 </div>
                 <Chip color="accent" size="sm" variant="soft">Ready when you are</Chip>
-                <h2>See the story inside your archive.</h2>
+                <h2>Your conversations belong here.</h2>
                 <p>Select an Instagram export to privately browse messages, media, and conversation insights.</p>
               </div>
             )}
